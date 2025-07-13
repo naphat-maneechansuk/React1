@@ -9,7 +9,7 @@ function App() {
     { id: 3, name: "kalob" ,gender:"ชาย"},
     { id: 4, name: "sara" ,gender:"หญิง"}
   ]);
-  
+  console.table(data);
   const[show, setShow] = useState(true);
 
   return (
@@ -25,12 +25,13 @@ function App() {
       <hr />
       <h2>Data List</h2>
       <h3>จำนวนประชากร {data.length}</h3>
+      <button onClick={()=>setShow(!show)}>{show ? "ซ่อน":"เเสดง"}</button>
       <ul>
-        {data.map((item)=>(
+        {show && data.map((item)=>(
           <li key={item.id}>{item.name} | {item.gender}</li>
         ))}
-        
       </ul>
+
 
     </div>
     </>

@@ -42,3 +42,6 @@ select{
     color: white;
     cursor: pointer;
 }
+.btn-save:disabled{
+    background-color: gray;
+}

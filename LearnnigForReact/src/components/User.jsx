@@ -7,7 +7,7 @@ export default function User({item,deleteUser}) {
       <li style={{ color: item.gender == "ชาย" ? "blue" : "red" }} >
         <img src={item.gender == "ชาย" ? boy : girl} width={70} height={70} />
         <p>
-          name : {item.name} | age : {item.age}
+          ชื่อ : {item.name} | อายุ : {item.age}
         </p>
 
         <div className="control">

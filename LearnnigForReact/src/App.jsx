@@ -24,7 +24,7 @@ function App() {
     <div className="App">
     <Header title="My Application"></Header>
     <main>
-      <AddForm/>
+      <AddForm data={data} setData={setData}/>
     <PersonList data={data} deleteUser={deleteUser}/>
     </main>
     </div>

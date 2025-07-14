@@ -23,7 +23,7 @@ function PersonList() {
       <ul>
         
         {show && data.map((item) => (
-            <li key={item.id}>
+            <li key={item.id} style={{color:item.gender=="ชาย" ? "blue": "red"}}>
               <img src={item.gender == "ชาย" ? boy : girl} width={70} height={70} />
               <p>name : {item.name} | age : {item.age}</p>
               <div className="control">

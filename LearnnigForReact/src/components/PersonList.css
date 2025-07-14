@@ -1,0 +1,26 @@
+.container{
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius:5px; ;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin:20px 10px;
+}
+li{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button{
+    margin-left: 5px;
+}

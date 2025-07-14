@@ -13,11 +13,3 @@ button{
   margin: 0px 10px;
   border-radius: 5px;
 }
-
-main{
-  max-width: 1200px;
-  min-width: 900px;
-  margin: auto;
-  padding: 10px;
-  border: 1px solid #000000;
-}

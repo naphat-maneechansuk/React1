@@ -1,7 +1,7 @@
 import boy from "../assets/boy.svg";
 import girl from "../assets/girl.svg";
 
-export default function User({ item }) {
+export default function User({item,deleteUser}) {
   return (
     <div>
       <li style={{ color: item.gender == "ชาย" ? "blue" : "red" }} >
@@ -9,8 +9,9 @@ export default function User({ item }) {
         <p>
           name : {item.name} | age : {item.age}
         </p>
+
         <div className="control">
-          <button>ลบ</button>
+          <button onClick={()=>deleteUser(item.id)}>ลบ</button>
         </div>
       </li>
     </div>

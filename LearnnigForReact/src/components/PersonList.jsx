@@ -4,7 +4,6 @@ import User from "./User";
 
 function PersonList({ data, deleteUser }) {  
   const [show, setShow] = useState(true);
-  console.table(data);
 
   return (
     <div className="container">
@@ -15,8 +14,7 @@ function PersonList({ data, deleteUser }) {
         </button>
       </div>
       <ul>
-        {show &&
-          data.map((item) => (
+        {show && data.map((item) => (
             <User key={item.id} item={item} deleteUser={deleteUser} />
           ))}
       </ul>

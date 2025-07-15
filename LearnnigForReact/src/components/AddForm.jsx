@@ -9,7 +9,7 @@ export default function AddForm(props) {
   function saveData(e) {
     e.preventDefault(); 
     const person ={
-        id: data.length + 1, // Simple ID generation
+        id: data.length>0 ? data[data.length - 1].id + 1 :1, // Incrementing the last id
         name: name,
         age: age,
         gender:gender
